@@ -1,4 +1,6 @@
 ﻿using MediatR;
+using MediatRWithCQRSSample2.Command;
+using MediatRWithCQRSSample2.Model;
 using MediatRWithCQRSSample2.Queries;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -24,5 +26,14 @@ namespace MediatRWithCQRSSample2.Controllers
 
         [HttpGet("Get")]
         public async Task<IActionResult> Get()=> Ok(await _mediator.Send(new GetProductsQuery()));
+
+        //[HttpPost("Post")]
+        //public async Task<IActionResult> Post(Product product)
+        //{
+        //   return Ok( await _mediator.Send(new InsertProductCommand(product)));
+        //}
+        
+        [HttpPost("Post")]
+        public async Task<IActionResult> Post(Product product)=> Ok(await _mediator.Send(new InsertProductCommand(product)));
     }
 }
