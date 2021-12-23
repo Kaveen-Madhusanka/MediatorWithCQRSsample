@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cb214ba6-7a87-45ff-9e83-63fb4d0bad52": {
+      "ProjectGuid": "cb214ba6-7a87-45ff-9e83-63fb4d0bad52",
+      "DisplayName": "MediatorWithCQRSsample",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
